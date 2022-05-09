@@ -26,6 +26,12 @@ function stringClean(s){
     
     return y.join('')
   }
-
   
- console.log(stringClean("(E3at m2e2!!)")); 
+  console.log(stringClean("(E3at m2e2!!)")); 
+  // !best Practices
+  function stringClean(s){
+    return s.replace(/\d/g, "");
+  }
+  function stringClean(s){
+    return s.replace(/[0-9]/g, '');
+  }
